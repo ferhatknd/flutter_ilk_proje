@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ilk_proje/dropdown_button.dart';
 import 'package:flutter_ilk_proje/image_widget.dart';
 import 'package:flutter_ilk_proje/my_counter_page.dart';
+import 'package:flutter_ilk_proje/popup_menu.dart';
+import 'package:flutter_ilk_proje/temel_butonlar.dart';
 
 void main() {
   debugPrint('main metodu çalıştı');
@@ -19,9 +22,10 @@ class IlkApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.amber),
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Image Ornekleri')
+          title: const Text('Buton Ornekleri'),
+          actions: [PopUp()],
         ),
-        body: const ImageOrnekleri(),
+        body: const PopUp(),
       )
     );
   }
